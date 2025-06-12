@@ -80,6 +80,15 @@ plt.savefig("outputs/plots/wordcloud.png")
 plt.clf()
 
 
+# Save drivers and pain points to CSV
+drivers.to_csv('outputs/summary/drivers.csv', index=False)
+pain_points.to_csv('outputs/summary/pain_points.csv', index=False)
+print("\nTop Drivers per Bank:")
+print(drivers)
+
+print("\nTop Pain Points per Bank:")
+print(pain_points)
+
 # Bias risk due to more vocal unhappy users.
 
 # Theme classification may miss nuances in Amharic.

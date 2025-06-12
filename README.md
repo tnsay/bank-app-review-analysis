@@ -110,7 +110,15 @@ bank-app-review-analysis/
 
 
 ## Run scripts sequentially:
-python scripts/scrape_reviews.py
-python scripts/sentiment_thematic_analysis.py
-python scripts/database_insert.py
-python scripts/analyze_insights.py
+- `python scripts/scrape_reviews.py`
+- `python scripts/sentiment_thematic_analysis.py`
+- `python scripts/database_insert.py`
+- `python scripts/analyze_insights.py`
+
+
+### Ethical Considerations
+
+- **Bias in Reviews**: Online reviews tend to be skewed negative, as users are more likely to report issues than praise. This may exaggerate perceived problems and underrepresent silent satisfaction.
+- **Language Detection Limitations**: Sentiment and theme classification was optimized for English. Amharic reviews may be under-analyzed or misclassified.
+- **Automated Classification Risks**: Theme tagging and sentiment labeling depend on pre-trained models. They may miss sarcasm, humor, or cultural nuances.
+- **Transparency**: All steps and assumptions were logged and versioned in Git for auditability.
